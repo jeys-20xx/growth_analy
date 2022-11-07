@@ -3,7 +3,7 @@ import time
 import datetime
 import streamlit as st 
 
-df1 = pd.read_csv("prime.csv",encoding="cp932")
+df1 = pd.read_csv("prime.csv",encoding="cp932")#kabu探ファイル\
 df2 = pd.read_csv("standard.csv",encoding="cp932")
 df3 = pd.read_csv("growth.csv",encoding="cp932")
 
@@ -12,8 +12,8 @@ st.caption("業績推移ファンダメンタル分析")
 
 code00 = st.text_input("証券コード入力")   
     
-submit_button = st.button("Enter")
-if submit_button:
+
+if code00:
         
     try:
         st.table(df1[["列1",f"{code00}"]])
