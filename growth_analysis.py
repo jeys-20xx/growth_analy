@@ -3,9 +3,9 @@ import time
 import datetime
 import streamlit as st 
 
-df1 = pd.read_csv("kabu探ファイル\prime.csv",encoding="cp932")
-df2 = pd.read_csv("kabu探ファイル\standard.csv",encoding="cp932")
-df3 = pd.read_csv("kabu探ファイル\growth.csv",encoding="cp932")
+df1 = pd.read_csv("prime.csv",encoding="cp932")
+df2 = pd.read_csv("standard.csv",encoding="cp932")
+df3 = pd.read_csv("growth.csv",encoding="cp932")
 
 st.title("Growth_分析")
 st.caption("業績推移ファンダメンタル分析")
